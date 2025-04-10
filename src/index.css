@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --body-color: #d4d4d4;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--body-color);
+  font-family: 'Saira Condensed', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*:focus{
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hover-button:hover svg path {
+  fill: #3E7AEE;
+}
+.hover-button:hover {
+  background-color: white;
+}
